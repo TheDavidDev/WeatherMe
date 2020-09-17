@@ -1,29 +1,29 @@
 import React from 'react';
 
 const Weather = props => (
-    <div classname="weather__info">
+    <div className="weather__info">
      { 
-        props.city && props.country && <p classname="weather__key"> Location:
-        <span classname="weather__value"> { props.city }, { props.country}</span>
+        props.city && props.country && <p className="weather__key"> Location:
+        <span className="weather__value"> { props.city }, { props.country}</span>
         </p>
      }
      { 
-         props.temperature && <p classname="weather__key">Temperature: 
-         <span classname="weather__value"> { props.temperature }</span>
+         props.temperature && <p className="weather__key">Temperature: 
+         <span className="weather__value"> { props.temperature }</span>
          </p> 
      }
      { 
-         props.humidity && <p classname="weather__key">Humidity: 
-         <span classname="weather__value"> { props.humidity }</span>
+         props.humidity && <p className="weather__key">Humidity: 
+         <span className="weather__value"> { props.humidity }</span>
          </p> 
      }
      { 
-         props.description && <p classname="weather__key">Conditions: 
-         <span classname="weather__value"> { props.description }</span>
+         props.description && <p className="weather__key">Conditions: 
+         <span className="weather__value"> { props.description }</span>
          </p> 
      }  
      { 
-         props.error && <span classname="weather__error">{ props.error } </span> 
+         props.error && <span className="weather__error">{ props.error } </span> 
      }
     </div>
 );
